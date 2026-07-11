@@ -209,8 +209,8 @@ https://github.com/23ata05317/Smart-Lender-Loan-Approval-Prediction-System
 # 👥 Team Members
 
 - **Doranala Surya Teja** (Team Lead)
-- **Alfisha Maheen Shaik**
-- **Sonu Shaik**
+- **Shaik Alfisha Maheen**
+- **Shaik Sonu**
 
 ---
 
