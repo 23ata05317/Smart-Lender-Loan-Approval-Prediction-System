@@ -142,6 +142,9 @@ Smart-Lender-Loan-Approval-Prediction-System
 │   └── scaler.pkl
 │
 ├── screenshots
+│   ├── home.png
+│   ├── loan_form.png
+│   └── prediction_result.png
 │
 ├── static
 │   └── style.css
@@ -156,7 +159,7 @@ Smart-Lender-Loan-Approval-Prediction-System
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-```---
+---
 
 # ⚙️ Installation
 
