@@ -3,14 +3,16 @@
 A Machine Learning-based web application developed using Flask to predict loan approval based on applicant details. The project is deployed on Render for live access.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-success?style=for-the-badge)](https://smart-lender-loan-approval-prediction-sg6c.onrender.com)
+
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
+
 ![Flask](https://img.shields.io/badge/Flask-Web%20Application-black?style=for-the-badge&logo=flask)
 
 ---
 
 # 🌐 Live Demo
 
-**Render Deployment**
+### Render Deployment
 
 https://smart-lender-loan-approval-prediction-sg6c.onrender.com
 
@@ -50,15 +52,21 @@ The application predicts whether the loan is approved or rejected using the trai
 
 # 🎯 Project Objective
 
-The objective of this project is to develop a Machine Learning-powered web application that predicts loan approval based on applicant details. The system aims to simplify and automate the loan evaluation process by providing quick and reliable predictions through an easy-to-use web interface.
+The objective of this project is to develop a Machine Learning-powered web application that predicts loan approval based on applicant details.
+
+The system simplifies and automates the loan evaluation process by providing quick and reliable predictions through an easy-to-use web interface.
 
 ---
 
 # 📖 Project Description
 
-Financial institutions process numerous loan applications every day. Evaluating each application manually is time-consuming and may lead to inconsistent decisions.
+Financial institutions process numerous loan applications every day.
 
-The **Smart Lender – Loan Approval Prediction System** automates this process using Machine Learning. The application analyzes applicant information and predicts whether the loan is likely to be approved, helping improve efficiency and consistency in loan evaluation.
+Evaluating each application manually is time-consuming and may lead to inconsistent decisions.
+
+The **Smart Lender – Loan Approval Prediction System** automates this process using Machine Learning.
+
+The application analyzes applicant information and predicts whether the loan is likely to be approved, helping improve efficiency, accuracy, and consistency in loan evaluation.
 
 ---
 
@@ -69,6 +77,7 @@ The **Smart Lender – Loan Approval Prediction System** automates this process 
 - User-Friendly Interface
 - Data Preprocessing
 - Model Training and Evaluation
+- Interactive Data Visualization using Matplotlib & Seaborn
 - Input Validation
 - Responsive User Interface
 - Live Deployment using Render
@@ -85,11 +94,29 @@ The **Smart Lender – Loan Approval Prediction System** automates this process 
 | Scikit-learn | Machine Learning |
 | Pandas | Data Analysis |
 | NumPy | Numerical Computing |
-| HTML | Frontend |
+| Matplotlib | Data Visualization |
+| Seaborn | Statistical Visualization |
+| Jupyter Notebook | Machine Learning Workflow |
+| HTML | Frontend Development |
 | CSS | Styling |
 | Git | Version Control |
 | GitHub | Repository Hosting |
 | Render | Cloud Deployment |
+
+---
+
+# 🤖 Machine Learning Algorithms
+
+The following Machine Learning algorithms were trained and evaluated during the project:
+
+- Decision Tree Classifier
+- Random Forest Classifier
+- K-Nearest Neighbors (KNN)
+- XGBoost Classifier
+
+After comparing the performance of all models, the best-performing model was selected and saved as **model.pkl**.
+
+The trained model is integrated with the Flask application to predict loan approval in real time.
 
 ---
 
@@ -108,49 +135,83 @@ Smart-Lender-Loan-Approval-Prediction-System
 ├── 8. Project Demonstration
 │
 ├── dataset
-├── model
-├── screenshots
-├── static
-├── templates
+│   └── loan_prediction.csv
 │
+├── model
+│   ├── model.pkl
+│   └── scaler.pkl
+│
+├── screenshots
+│
+├── static
+│   └── style.css
+│
+├── templates
+│   ├── home.html
+│   ├── predict.html
+│   └── submit.html
+│
+├── Loan_Prediction_Using_ML.ipynb
 ├── app.py
-├── preprocessing.py
-├── model_training.py
-├── train_model.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-```
-
----
+```---
 
 # ⚙️ Installation
 
-### Clone the Repository
+### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/23ata05317/Smart-Lender-Loan-Approval-Prediction-System.git
 ```
 
-### Navigate to the Project
+---
+
+### Step 2: Navigate to the Project Folder
 
 ```bash
 cd Smart-Lender-Loan-Approval-Prediction-System
 ```
 
-### Install Dependencies
+---
+
+### Step 3: Install Required Libraries
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the Application
+---
+
+### Step 4: Run the Machine Learning Notebook
+
+Open **Loan_Prediction_Using_ML.ipynb** and execute all the cells.
+
+This notebook performs:
+
+- Data Cleaning
+- Exploratory Data Analysis
+- Data Preprocessing
+- Model Training
+- Model Evaluation
+- Saves:
+  - `model/model.pkl`
+  - `model/scaler.pkl`
+
+---
+
+### Step 5: Run the Flask Application
 
 ```bash
 python app.py
 ```
 
-Open your browser and visit:
+---
+
+### Step 6: Open in Browser
+
+Visit:
 
 ```
 http://127.0.0.1:5000
@@ -160,14 +221,21 @@ http://127.0.0.1:5000
 
 # 🤖 Machine Learning Workflow
 
+The Machine Learning workflow followed in this project is:
+
 - Dataset Collection
 - Data Cleaning
-- Exploratory Data Analysis
-- Data Preprocessing
-- Feature Engineering
+- Missing Value Handling
+- Exploratory Data Analysis (EDA)
+- Label Encoding
+- Feature Selection
+- Data Balancing using SMOTE
+- Feature Scaling using StandardScaler
+- Train-Test Split
 - Model Training
 - Model Evaluation
-- Model Saving
+- Accuracy Comparison
+- Model Saving (`model.pkl` & `scaler.pkl`)
 - Flask Application Integration
 - Loan Approval Prediction
 
@@ -177,23 +245,22 @@ http://127.0.0.1:5000
 
 This repository contains:
 
-- Source Code
-- Machine Learning Models
-- Dataset
-- Flask Web Application
+- Flask Source Code
+- Machine Learning Notebook
+- Trained Machine Learning Models
+- Loan Prediction Dataset
+- HTML Templates
+- CSS Files
 - Project Documentation
 - Testing Reports
 - Demonstration Files
-
----
-
-# 📂 GitHub Repository
-
-https://github.com/23ata05317/Smart-Lender-Loan-Approval-Prediction-System
+- Deployment Configuration
 
 ---
 
 # 🚀 Future Enhancements
+
+The project can be further enhanced by implementing:
 
 - User Authentication
 - Database Integration
@@ -201,14 +268,16 @@ https://github.com/23ata05317/Smart-Lender-Loan-Approval-Prediction-System
 - Admin Dashboard
 - Loan History Management
 - Email Notifications
-- Multiple Machine Learning Models
+- Additional Machine Learning Models
 - Improved Prediction Accuracy
+- PDF Report Generation
+- API Integration
 
 ---
 
 # 👥 Team Members
 
-- **Doranala Surya Teja** (Team Lead)
+- **Doranala Surya Teja** *(Team Lead)*
 - **Shaik Alfisha Maheen**
 - **Shaik Sonu**
 
@@ -220,4 +289,40 @@ This project was developed for **academic purposes** as part of the **SkillWalle
 
 ---
 
-⭐ **If you found this project useful, consider giving this repository a Star on GitHub!**
+# 🙏 Acknowledgement
+
+We sincerely thank **SkillWallet** for providing the opportunity to work on this Machine Learning project.
+
+This project helped us gain practical knowledge in:
+
+- Machine Learning
+- Data Preprocessing
+- Flask Web Development
+- Git & GitHub
+- Cloud Deployment using Render
+
+---
+
+# ⭐ Support
+
+If you found this project useful, please consider giving this repository a **⭐ Star** on GitHub.
+
+It helps support the project and encourages future improvements.
+
+---
+
+# 📬 Contact
+
+For any suggestions or queries regarding this project, feel free to reach out through GitHub.
+
+GitHub Repository:
+
+https://github.com/23ata05317/Smart-Lender-Loan-Approval-Prediction-System
+
+---
+
+## ⭐ Thank You!
+
+Thank you for visiting our **Smart Lender – Loan Approval Prediction System** repository.
+
+We hope this project is useful for learning Machine Learning and Flask-based web application development.
